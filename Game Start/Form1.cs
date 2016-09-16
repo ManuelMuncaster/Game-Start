@@ -81,7 +81,7 @@ namespace Game_Start
 
             Pen bluePen = new Pen(Color.Blue, 10);
             Pen yellowPen = new Pen(Color.Yellow, 10);
-            formGraphics.DrawLine(bluePen, 200, 150, 50, 100);
+            formGraphics.DrawLine(bluePen, 20, 20, 50, 150);
 
 
 
