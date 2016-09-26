@@ -78,10 +78,30 @@ namespace Game_Start
             Thread.Sleep(1250);
             formGraphics.Clear(Color.Black);
             Refresh();
+            
 
             Pen bluePen = new Pen(Color.Blue, 10);
             Pen yellowPen = new Pen(Color.Yellow, 10);
-            formGraphics.DrawLine(bluePen, 20, 20, 50, 150);
+            SolidBrush yellowBrush = new SolidBrush(Color.Yellow);
+            // Maze Lines
+            formGraphics.DrawLine(bluePen, 0, 5, 260, 5);
+            formGraphics.DrawLine(bluePen, 255, 5, 200, 25000);
+            formGraphics.DrawLine(bluePen, 0, 90, 170, 90);
+            formGraphics.DrawLine(bluePen, 164, 90, 200, 25000);
+            // Pac-Man
+            formGraphics.DrawArc(yellowPen, 5, 20, 50, 50, 30, 300);
+            formGraphics.DrawPie(yellowPen, 5, 20, 50, 50, 30, 300);
+            formGraphics.FillPie(yellowBrush, 5, 20, 50, 50, 30, 300);
+
+            Thread.Sleep(1250);
+            formGraphics.Clear(Color.Black);
+            Refresh();
+
+         
+
+
+
+
 
 
 
@@ -100,7 +120,7 @@ namespace Game_Start
 
         private void label1_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
